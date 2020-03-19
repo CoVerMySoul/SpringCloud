@@ -9,10 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order80</artifactId>
-
+    <artifactId>cloud-consumer-feign-order80</artifactId>
 
     <dependencies>
+
+        <!--openfeign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!--eureka-client 也集成了Ribbon-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -48,4 +53,5 @@
             <optional>true</optional>
         </dependency>
     </dependencies>
+
 </project>
